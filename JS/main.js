@@ -1,5 +1,15 @@
-let age = prompt(`Inserisci l'età del viaggiatore`);
-let km = prompt(`Inserisci i km da percorrere`);
+const submitButton = document.querySelector('form button')
+
+submitButton.addEventListener('click', function(event){
+    event.preventDefault()
+
+    const age = document.querySelector('#age')
+    const km = document.querySelector('#distance')
+    console.log(age.value)
+    console.log(km.value)
+
+    }
+)
 
 let grossPrice = 0;
 let finalPrice = 0; 
@@ -31,4 +41,3 @@ if(isNaN(age)){
     console.log(`Il prezzo del biglietto al netto degli sconti è: ${finalPriceEuro}`);
 
 }
-
